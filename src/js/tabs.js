@@ -13,13 +13,6 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     });
 
-    tabsContent.forEach((content, i) => {
-        content.style.display = "none";
-        // tabs.forEach((tab, k)=>{
-        //     console.log(content);
-        // });
-    });
-
     function clearAllActivesTabs(tabs){
         tabs.forEach(tab =>{
             tab.classList.remove('catalog__tab_active');
@@ -28,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     function clearAllDisplayContent(){
         tabsContent.forEach(elem =>{
-            elem.style.display = "none";
+            elem.classList.remove('catalog__content_active');
         })
     }
 
@@ -39,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function(){
             //     }
             // }
             if(tab.classList.contains('catalog__tab_active')){
-                content[i].style.display = "flex";
+                content[i].classList.toggle('catalog__content_active');
             }
         })
     }

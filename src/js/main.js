@@ -3,6 +3,7 @@ $(document).ready(function(){
       nextArrow: '<div class="carousel__prev-arrow"><img src="../icons/next-arrow.png"></div>',
       prevArrow: '<div class="carousel__next-arrow"><img src="../icons/prev-arrow.png"></div>',
       appendDots: '.carousel__dots',
+      fade: true,
       //dots: true,
       responsive: [
           {
@@ -11,6 +12,7 @@ $(document).ready(function(){
               dots: true,
               arrows: false,
               centerPadding: '40px',
+              fade: false,
             }
           },
         ]
