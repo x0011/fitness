@@ -8,6 +8,7 @@ html, * {
     margin: 0px auto;
     width: 1140px;
     padding: 0px;
+    z-index: 1;
 }
 @import 'variables';
 @import 'media';
@@ -23,5 +24,6 @@ html, * {
 @import 'blocks/catalog';
 @import 'blocks/reviews';
 @import 'blocks/footer';
+@import 'blocks/modals';
 
 @import 'media';

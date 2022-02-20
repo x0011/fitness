@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', function(){
     let tabsContent = document.querySelectorAll('.catalog__content');
     let tabs = document.querySelectorAll('.catalog__tab');
-    console.log(tabs);
     tabs.forEach(tab => {
         tab.addEventListener('click', event => {
             clearAllActivesTabs(tabs);

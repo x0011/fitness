@@ -21,7 +21,7 @@
                 </div>
                 <div class="header__contacts">
                     <a href="+7 (499) 922-89-74" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="callback-btn">заказать звонок</button> 
+                    <button class="callback-btn" data-modal="callback">заказать звонок</button> 
                 </div>
             </div>
 
@@ -33,7 +33,7 @@
                     <div class="promo__icon"><img src="icons/hand cart.png" alt="">Бесплатная доставка</div>
                     <div class="promo__icon"><img src="icons/messages.png" alt="">Ответим на все вопросы</div>
                 </div>
-                <button class="callback-btn callback-btn_big">заказать кОНСУЛЬТАЦИЮ</button> 
+                <button class="callback-btn callback-btn_big" data-modal="callback">заказать кОНСУЛЬТАЦИЮ</button> 
                 <div class="promo__more">или <a href="#">Перейти в каталог</a></div>
             </div>
 
@@ -394,7 +394,7 @@
                     <div class="catalog-item__content-wrapper">
                         <div class="catalog-item__face-content catalog-item__face-content_active">
                             <img src="img/catalog/pulsemetr.png" alt="">
-                            <div class="catalog-item__title">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__title">Пульсометр Polar FT2</div>
                             <div class="catalog-item__description">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <div class="catalog-item__more-link">ПОДРОБНЕЕ</div>
                         </div>
@@ -585,11 +585,43 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="callback-modal" >
+            <div class="modal__close">&#10005;</div>
+            <h2 class="modal__title">Просто заполните форму заявки</h2>
+            <h3 class="modal__subtitle">и мы перезвоним вам в течении 10 минут</h3>
+            <form action="#" class="callback-form">
+                <input required type="text" placeholder="Ваше имя">
+                <input required type="number" placeholder="Ваш телефон">
+                <input required type="email" placeholder="Ваше e-mail">
+                <button class="callback-btn callback-btn_big" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+        <div class="modal" id="order-modal">
+            <div class="modal__close">&#10005;</div>
+            <h2 class="modal__title">Ваш заказ:</h2>
+            <h3 class="modal__subtitle">Пульсометр Polar FT1</h3>
+            <form action="#" class="callback-form">
+                <input required type="text" placeholder="Ваше имя">
+                <input required type="number" placeholder="Ваш телефон">
+                <input required type="email" placeholder="Ваше e-mail">
+                <button class="callback-btn callback-btn_big" type="submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+        <div class="modal" id="thanks-modal">
+            <div class="modal__close">&#10005;</div>
+            <h2 class="modal__title">Спасибо за вашу заявку!</h2>
+            <h3 class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время!</h3>
+        </div>
+    </div>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/tabs.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modals.js"></script>
     <script type="text/javascript" src="js/catalog-item.js"></script>
 </body>
 </html>
